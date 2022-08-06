@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="td_container">
+        <div class="td_title">Список дел</div>
+        <input autofocus onkeydown="if (event.keyCode ===13) addToDo()" type="text" placeholder="Введите задание..." class="td_input">
+        <button type="submit" onclick="addToDo()" class=td_button>Добавить</button>
+        <div class="td_list">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
