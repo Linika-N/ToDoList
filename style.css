@@ -40,6 +40,8 @@ html{
 
 }
 .td_list_item{
+    display: list-item;
+    position: relative;
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -47,4 +49,32 @@ html{
     border: 1px solid saddlebrown;
     border-radius: 15px;
     margin-bottom: 5px;
+    list-style-position: inside;
+}
+.td_list_item_done{
+    background-color: green;
+}
+.td_list_item span{
+    width: 300px;
+}
+.td_list_item_checkbox{
+    position: absolute;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+}
+.td_list_item_checkbox:active{
+    border: 1px solid teal;
+}
+.delete_btn{
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: no-repeat center/90% url(icon/vcsconflicting_93497.svg);
+    border: none;
+}
+.delete_btn:active{
+    border: 1px solid black;
 }
